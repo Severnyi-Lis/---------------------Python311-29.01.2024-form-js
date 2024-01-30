@@ -10,18 +10,21 @@ function kuk(){
     )
 }
 
-function nnn(){
+function nnn(event){
    var p = document.forms.trigger.prpr.value
-    if(p.length==''){
+    if(p ==''){
         window.alert("Не указано Ваше Имя");
-    }else{} 
+        event.preventDefault();
+    }else{}
     var z =document.forms.trigger.prpr_2.value
-    if(z.length==''){
+    if(z ==''){
         window.alert("Не указано Ваша Фамилия");
+        event.preventDefault();
     }else{}
     var f = document.forms.trigger.prpr_3.value
-    if(f.length==''){
-        window.alert("Не указано Ваше Отчество"); 
+    if(f ==''){
+        window.alert("Не указано Ваше Отчество");
+        event.preventDefault();
     }else{}
 }  
 
